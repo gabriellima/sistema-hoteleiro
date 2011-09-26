@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110926053640) do
+ActiveRecord::Schema.define(:version => 20110926064309) do
 
   create_table "hostel_rooms", :force => true do |t|
     t.float    "price"
@@ -24,6 +24,16 @@ ActiveRecord::Schema.define(:version => 20110926053640) do
   end
 
   create_table "hotel_rooms", :force => true do |t|
+    t.float    "price"
+    t.boolean  "air_conditioner"
+    t.boolean  "fireplace"
+    t.integer  "number_of_rooms"
+    t.boolean  "balcony"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "searches", :force => true do |t|
     t.float    "price"
     t.boolean  "air_conditioner"
     t.boolean  "fireplace"

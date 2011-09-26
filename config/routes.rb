@@ -1,8 +1,9 @@
 SistemaHoteleiro::Application.routes.draw do
+  root :to => "home#index"
+
   resources :hostel_rooms
   resources :hotel_rooms
-
-  root :to => "home#index"
+  resources :searches
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
