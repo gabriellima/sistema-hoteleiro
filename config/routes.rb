@@ -1,4 +1,8 @@
 SistemaHoteleiro::Application.routes.draw do
+  resources :hostel_rooms
+
+  resources :hotel_rooms
+
   get "home/index"
   root :to => "home#index"
 
