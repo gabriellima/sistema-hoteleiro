@@ -1,7 +1,7 @@
-Feature: Manage hostel_rooms
-  In order to [goal]
-  [stakeholder]
-  wants [behaviour]
+Feature: Manage hostel rooms
+  In order to have hostel rooms
+  As a manager
+  I want to register and delete hostel rooms
 
   Scenario: Register new hostel_room
     Given I am on the new hostel_room page

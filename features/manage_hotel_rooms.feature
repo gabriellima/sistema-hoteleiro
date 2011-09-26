@@ -1,7 +1,7 @@
-Feature: Manage hotel_rooms
-  In order to [goal]
-  [stakeholder]
-  wants [behaviour]
+Feature: Manage hotel rooms
+  In order to have hotel rooms
+  As a manager
+  I want to register and delete hotel rooms
 
   Scenario: Register new hotel_room
     Given I am on the new hotel_room page
