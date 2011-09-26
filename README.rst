@@ -15,5 +15,5 @@ Uso
 Observações
 -------------
 
-É mais para ter algo pronto do que para ter um produto, então sem preocupações com BDD.
+É mais para ter algo pronto (encima da hora) do que para ter um produto, então sem preocupação com testes.
 
