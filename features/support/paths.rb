@@ -10,11 +10,6 @@ module NavigationHelpers
 
     when /^the home\s?page$/
       '/'
-    when /the new hostel_room page/
-      new_hostel_room_path
-
-    when /the new hotel_room page/
-      new_hotel_room_path
 
 
     # Add more mappings here.
@@ -37,3 +32,4 @@ module NavigationHelpers
 end
 
 World(NavigationHelpers)
+
