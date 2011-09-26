@@ -43,102 +43,6 @@ describe SearchesController do
     end
   end
 
-  describe "GET new" do
-    it "assigns a new search as @search" do
-      get :new
-      assigns(:search).should be_a_new(Search)
-    end
-  end
-
-  describe "GET edit" do
-    it "assigns the requested search as @search" do
-      search = Search.create! valid_attributes
-      get :edit, :id => search.id.to_s
-      assigns(:search).should eq(search)
-    end
-  end
-
-  describe "POST create" do
-    describe "with valid params" do
-      it "creates a new Search" do
-        expect {
-          post :create, :search => valid_attributes
-        }.to change(Search, :count).by(1)
-      end
-
-      it "assigns a newly created search as @search" do
-        post :create, :search => valid_attributes
-        assigns(:search).should be_a(Search)
-        assigns(:search).should be_persisted
-      end
-
-      it "redirects to the created search" do
-        post :create, :search => valid_attributes
-        response.should redirect_to(Search.last)
-      end
-    end
-
-    describe "with invalid params" do
-      it "assigns a newly created but unsaved search as @search" do
-        # Trigger the behavior that occurs when invalid params are submitted
-        Search.any_instance.stub(:save).and_return(false)
-        post :create, :search => {}
-        assigns(:search).should be_a_new(Search)
-      end
-
-      it "re-renders the 'new' template" do
-        # Trigger the behavior that occurs when invalid params are submitted
-        Search.any_instance.stub(:save).and_return(false)
-        post :create, :search => {}
-        response.should render_template("new")
-      end
-    end
-  end
-
-  describe "PUT update" do
-    describe "with valid params" do
-      it "updates the requested search" do
-        search = Search.create! valid_attributes
-        # Assuming there are no other searches in the database, this
-        # specifies that the Search created on the previous line
-        # receives the :update_attributes message with whatever params are
-        # submitted in the request.
-        Search.any_instance.should_receive(:update_attributes).with({'these' => 'params'})
-        put :update, :id => search.id, :search => {'these' => 'params'}
-      end
-
-      it "assigns the requested search as @search" do
-        search = Search.create! valid_attributes
-        put :update, :id => search.id, :search => valid_attributes
-        assigns(:search).should eq(search)
-      end
-
-      it "redirects to the search" do
-        search = Search.create! valid_attributes
-        put :update, :id => search.id, :search => valid_attributes
-        response.should redirect_to(search)
-      end
-    end
-
-    describe "with invalid params" do
-      it "assigns the search as @search" do
-        search = Search.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        Search.any_instance.stub(:save).and_return(false)
-        put :update, :id => search.id.to_s, :search => {}
-        assigns(:search).should eq(search)
-      end
-
-      it "re-renders the 'edit' template" do
-        search = Search.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        Search.any_instance.stub(:save).and_return(false)
-        put :update, :id => search.id.to_s, :search => {}
-        response.should render_template("edit")
-      end
-    end
-  end
-
   describe "DELETE destroy" do
     it "destroys the requested search" do
       search = Search.create! valid_attributes
@@ -155,3 +59,4 @@ describe SearchesController do
   end
 
 end
+
