@@ -19,15 +19,15 @@ Feature: Manage hotel rooms
 
   Scenario: Delete hotel_room
     Given the following hotel_rooms:
-      | price   | air_conditioner | fireplace | number_of_rooms | balcony |
-      | 10.0 | false           | false     | 1               | false   |
-      | 20.0 | true            | true      | 2               | true    |
-      | 30.0 | false           | false     | 3               | false   |
-      | 40.0 | true            | true      | 4               | true    |
+      | name    | price | air_conditioner | fireplace | number_of_rooms | balcony |
+      | hotel 1 | 10.0  | false           | false     | 1               | false   |
+      | hotel 2 | 20.0  | true            | true      | 2               | true    |
+      | hotel 3 | 30.0  | false           | false     | 3               | false   |
+      | hotel 4 | 40.0  | true            | true      | 4               | true    |
     When I delete the 3rd hotel_room
     Then I should see the following hotel_rooms:
-      | Price   | Air conditioner | Fireplace | Number of rooms | Balcony |
-      | 10.0 | false           | false     | 1               | false   |
-      | 20.0 | true            | true      | 2               | true    |
-      | 40.0 | true            | true      | 4               | true    |
+      | Name    | Price | Air conditioner | Fireplace | Number of rooms | Balcony |
+      | hotel 1 | 10.0  | false           | false     | 1               | false   |
+      | hotel 2 | 20.0  | true            | true      | 2               | true    |
+      | hotel 4 | 40.0  | true            | true      | 4               | true    |
 
