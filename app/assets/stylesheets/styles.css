@@ -21,3 +21,7 @@ div#menu{float:left;width:150px}
 div#menu{height:550px}
 div#extra{float:right;width:200px}
 div#footer{clear:both;width:100%}
+
+a.enhanced {color: #38893F;}
+a.enhanced:hover {text-decoration: underline;}
+
