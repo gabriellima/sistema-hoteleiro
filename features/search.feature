@@ -5,13 +5,13 @@ Feature: Search rooms
 
   Scenario: Search step-by-step wizard
     Given the following hotel_rooms:
-      | price | air_conditioner | fireplace | number_of_rooms | balcony |
-      | 10.0  | false           | false     | 1               | false   |
-      | 10.0  | true            | true      | 2               | true    |
+      | name    | price | air_conditioner | fireplace | number_of_rooms | balcony |
+      | hotel 1 | 10.0  | false           | false     | 1               | false   |
+      | hotel 2 | 10.0  | true            | true      | 2               | true    |
     And the following hostel_rooms:
-      | price | air_conditioner | fireplace | number_of_rooms | balcony |
-      | 10.0  | false           | false     | 1               | false   |
-      | 20.0  | true            | false     | 3               | true    |
+      | name     | price | air_conditioner | fireplace | number_of_rooms | balcony |
+      | hostel 1 | 10.0  | false           | false     | 1               | false   |
+      | hostel 2 | 20.0  | true            | false     | 3               | true    |
 
     When I go to the new search page
     And I fill in "Price" with "10.0"
@@ -25,9 +25,9 @@ Feature: Search rooms
     And I uncheck "Balcony"
     And I press "Continue"
     Then I should see the following rooms:
-      | Type       | Price | Air conditioner | Fireplace | Number of rooms | Balcony |
-      | HotelRoom  | 10.0  | false           | false     | 1               | false   |
-      | HostelRoom | 10.0  | false           | false     | 1               | false   |
+      | Name     | Type       | Price | Air conditioner | Fireplace | Number of rooms | Balcony |
+      | hotel 1  | HotelRoom  | 10.0  | false           | false     | 1               | false   |
+      | hostel 1 | HostelRoom | 10.0  | false           | false     | 1               | false   |
 
     When I go to the new search page
     And I fill in "Price" with "10.0"
@@ -41,8 +41,8 @@ Feature: Search rooms
     And I check "Balcony"
     And I press "Continue"
     Then I should see the following rooms:
-      | Type      | Price | Air conditioner | Fireplace | Number of rooms | Balcony |
-      | HotelRoom | 10.0  | true            | true      | 2               | true    |
+      | Name    | Type      | Price | Air conditioner | Fireplace | Number of rooms | Balcony |
+      | hotel 2 | HotelRoom | 10.0  | true            | true      | 2               | true    |
 
     When I go to the new search page
     And I fill in "Price" with "20.0"
@@ -56,6 +56,6 @@ Feature: Search rooms
     And I check "Balcony"
     And I press "Continue"
     Then I should see the following rooms:
-      | Type       | Price | Air conditioner | Fireplace | Number of rooms | Balcony |
-      | HostelRoom | 20.0  | true            | false     | 3               | true    |
+      | Name     | Type       | Price | Air conditioner | Fireplace | Number of rooms | Balcony |
+      | hostel 2 | HostelRoom | 20.0  | true            | false     | 3               | true    |
 
