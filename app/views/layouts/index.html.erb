@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Sistema Hoteleiro</title>
+  <%= stylesheet_link_tag    "styles" %>
+  <%= javascript_include_tag "styles" %>
+  <%= csrf_meta_tags %>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <h1>Sistema Hoteleiro</h1>
+  </div>
+  <div id="wrapper">
+    <div id="content">
+      <%= yield %>
+    </div>
+  </div>
+  <div id="menu">
+    <p><strong>Menu</strong></p>
+   <ul>
+      <li><%= link_to 'Search', new_search_path %></li>
+      <li><%= link_to 'New Hostel', new_hostel_room_path %></li>
+      <li><%= link_to 'New Hotel', new_hotel_room_path %></li>
+   </ul>
+  </div>
+
+  <div id="footer">
+    <th>UENF - Sistemas Especialistas</th>
+  </div>
+</div>
+</body>
+</html>

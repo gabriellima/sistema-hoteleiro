@@ -1,4 +1,5 @@
 class HostelRoomsController < ApplicationController
+  layout 'index'
   # GET /hostel_rooms
   # GET /hostel_rooms.json
   def index

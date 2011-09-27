@@ -1,0 +1,23 @@
+html,body{margin:0;padding:0}
+body{font: 76% arial,sans-serif;text-align:center; background-color: #c1cdcd;}
+p{margin:0 10px 10px}
+a{padding:5px; text-decoration:none; color:#000000;}
+div#header{background-color:#6e7b8b; text-align:center; font: 22px arial}
+div#header h1{height:80px;line-height:80px;margin:0;padding-left:10px;}
+div#container{text-align:left}
+div#content p{line-height:1.4}
+div#container {background:#ffffff}
+div#menu{background:#a2b5cd;}
+div#menu{font: 14px arial,sans-serif;text-align:center;}
+div#menu ul{margin:15px 0; padding:0; list-style-type:none;}
+div#menu li{margin-bottom:5px;}
+div#menu li a:hover {background-color: #CAE1FF; color: #1E90FF;}
+div#extra{background:#CCC8B3;}
+div#footer{background:#6e7b8b; text-align:center}
+div#footer p{margin:0;padding:5px 10px}
+div#container{width:700px;margin:0 auto}
+div#content{float:right;width:500px}
+div#menu{float:left;width:150px}
+div#menu{height:550px}
+div#extra{float:right;width:200px}
+div#footer{clear:both;width:100%}
