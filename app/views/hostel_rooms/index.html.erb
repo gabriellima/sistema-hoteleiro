@@ -15,7 +15,7 @@
 
 <% @hostel_rooms.each do |hostel_room| %>
   <tr>
-    <td><%= hostel_room.nome %></td>
+    <td><%= hostel_room.name %></td>
     <td><%= hostel_room.price %></td>
     <td><%= hostel_room.air_conditioner %></td>
     <td><%= hostel_room.fireplace %></td>
@@ -31,3 +31,4 @@
 <br />
 
 <%= link_to 'New Hostel room', new_hostel_room_path %>
+
