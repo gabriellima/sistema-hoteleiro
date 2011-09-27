@@ -11,6 +11,7 @@ div#menu{background:#a2b5cd;}
 div#menu{font: 14px arial,sans-serif;text-align:center;}
 div#menu ul{margin:15px 0; padding:0; list-style-type:none;}
 div#menu li{margin-bottom:5px;}
+div#menu li a {display: block;}
 div#menu li a:hover {background-color: #CAE1FF; color: #1E90FF;}
 div#extra{background:#CCC8B3;}
 div#footer{background:#6e7b8b; text-align:center}
