@@ -19,15 +19,15 @@ Feature: Manage hostel rooms
 
   Scenario: Delete hostel_room
     Given the following hostel_rooms:
-      | price   | air_conditioner | fireplace | number_of_rooms | balcony |
-      | 10.0 | false           | false     | 1               | false   |
-      | 20.0 | true            | true      | 2               | true    |
-      | 30.0 | false           | false     | 3               | false   |
-      | 40.0 | true            | true      | 4               | true    |
+      | name     | price | air_conditioner | fireplace | number_of_rooms | balcony |
+      | hostel 1 | 10.0  | false           | false     | 1               | false   |
+      | hostel 2 | 20.0  | true            | true      | 2               | true    |
+      | hostel 3 | 30.0  | false           | false     | 3               | false   |
+      | hostel 4 | 40.0  | true            | true      | 4               | true    |
     When I delete the 3rd hostel_room
     Then I should see the following hostel_rooms:
-      | Price   | Air conditioner | Fireplace | Number of rooms | Balcony |
-      | 10.0 | false           | false     | 1               | false   |
-      | 20.0 | true            | true      | 2               | true    |
-      | 40.0 | true            | true      | 4               | true    |
+      | Name     | Price | Air conditioner | Fireplace | Number of rooms | Balcony |
+      | hostel 1 | 10.0  | false           | false     | 1               | false   |
+      | hostel 2 | 20.0  | true            | true      | 2               | true    |
+      | hostel 4 | 40.0  | true            | true      | 4               | true    |
 
