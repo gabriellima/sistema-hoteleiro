@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Name</th>
     <th>Price</th>
     <th>Air conditioner</th>
     <th>Fireplace</th>
@@ -14,6 +15,7 @@
 
 <% @searches.each do |search| %>
   <tr>
+    <td><%= search.nome %></td>
     <td><%= search.price %></td>
     <td><%= search.air_conditioner %></td>
     <td><%= search.fireplace %></td>

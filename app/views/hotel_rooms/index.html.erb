@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Name</th>
     <th>Price</th>
     <th>Air conditioner</th>
     <th>Fireplace</th>
@@ -14,6 +15,7 @@
 
 <% @hotel_rooms.each do |hotel_room| %>
   <tr>
+    <td><%= hotel_room.nome %></td>
     <td><%= hotel_room.price %></td>
     <td><%= hotel_room.air_conditioner %></td>
     <td><%= hotel_room.fireplace %></td>
