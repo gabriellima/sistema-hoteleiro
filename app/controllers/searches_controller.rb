@@ -43,7 +43,7 @@ class SearchesController < ApplicationController
       @rooms = HotelRoom.where(room_attributes)
       @rooms += HostelRoom.where(room_attributes)
 
-      #zero configurations
+      #reset configurations
       session[:search_step] = session[:search_params] = nil
     end
   end
